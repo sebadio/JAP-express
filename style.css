@@ -1,0 +1,104 @@
+* {
+  scroll-behavior: smooth;
+  scrollbar-color: white black;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  background-color: black;
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+section {
+  height: 100vh;
+  min-height: 100vh;
+  padding: 1rem;
+
+  color: wheat;
+
+  scroll-snap-align: start;
+}
+
+.contenedor {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.pBG {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 1rem;
+  padding: 0.2rem;
+}
+
+code {
+  background: #1e1e1e;
+  padding: 0.5rem;
+  border-radius: 15px;
+}
+
+.primera {
+  background: rgb(21, 18, 69);
+}
+
+.ventajas {
+  background: cornflowerblue;
+}
+
+.asincronia {
+  background: darkslateblue;
+}
+
+.ejemploAsincronia {
+  background: steelblue;
+}
+
+.ejemplos {
+  background: rgb(136, 145, 213);
+}
+
+.segunda {
+  background: rgb(211, 78, 69);
+}
+
+.tercera {
+  background: rgb(136, 14, 13);
+}
+
+.cuarta {
+  background: rgb(46, 66, 138);
+}
+
+.quinta {
+  background: rgb(96, 64, 138);
+}
+
+.sexta {
+  background: rgb(16, 164, 208);
+}
+
+.septima {
+  background: rgb(216, 64, 208);
+}
+
+.octava {
+  background: rgb(21, 14, 89);
+}
+
+.ultima {
+  background: black;
+}
+
+@media screen and (max-width: 1900px) {
+  section {
+    height: max-content;
+  }
+
+  .contenedor {
+    scroll-snap-type: none;
+  }
+}
