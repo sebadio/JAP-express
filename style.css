@@ -135,6 +135,22 @@ code {
   background: sienna;
 }
 
+.decimooctava {
+  background: purple;
+}
+
+.decimonovena {
+  background: rgb(21, 18, 69);
+}
+
+.vigesima {
+  background: rgb(121, 180, 69);
+}
+
+.vigesimaprimera {
+  background: rgb(121, 180, 169);
+}
+
 .ultima {
   background: black;
 }

@@ -1365,6 +1365,227 @@
         </div>
       </section>
 
+      <section class="decimooctava">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <img
+                src="./assets/imagenes/fetchExplanation.png"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-lg-4">
+              <p class="p-4 bg-dark rounded-4 fs-5">
+                El siguiente código hará que cuando hagamos una
+                <span class="text-info fw-bold">GET</span> request a la URL
+                base, nos devuelva el archivo
+                <span class="text-warning fw-semibold">index.html</span> que
+                creamos previamente. <br />
+                Resumiendo, lo que hace esta función es:
+                <br />
+                Espera a una <span class="text-info fw-bold">GET</span> request
+                a la url correspondiente. <br />
+                Cuando llega, trata de leer un archivo <br />
+                Si encuentra un error, no devuelve nada. <br />
+                En el caso de que no haya ningún error, devuelve el archivo como
+                respuesta.
+              </p>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-lg-6">
+              <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                Vamos a probarlo nuestro código entonces. <br />
+                En nuestra consola corremos el código con Node con el comando
+                <code>node index.js</code>
+                este deberia devolvernos un <code>console.log</code> avisando
+                que el server está corriendo correctamente y desde donde podemos
+                acceder. Si accedemos a ese link, nuestro navegador nos deberia
+                mostrar lo siguiente 👉
+              </p>
+            </div>
+
+            <div class="col-lg-6">
+              <img
+                src="./assets/imagenes/indexImage.png"
+                class="img-fluid rounded-4"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="decimonovena">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                Como podemos ver, es la página (bastante vacía) que habíamos
+                creado. Deben de estar pensando que si tenemos que crear una
+                escucha para cada URL, nos vamos a volver locos escribiendo
+                código y que no seria muy eficiente como programadores que
+                somos. Por suerte podemos recoger parámetros desde la
+                <span class="text-info fw-semibold">URL</span> a la que se
+                accede, por ejemplo
+                <br />
+                👇
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                <a
+                  class="link-light fw-semibold"
+                  href="https://japceibal.github.io/emercado-api/products/50744.json"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://japceibal.github.io/emercado-api/products/<span
+                    class="text-info"
+                    >50744</span
+                  >.json</a
+                >
+                Ese numero que vemos en azul, es el ID del producto, el cual
+                podemos extraer y hacer que actue como una especie de variable
+                👉
+              </p>
+
+              <p class="p-4 bg-dark rounded-4 fs-5 text-center">
+                Este código hace varias cosas: <br />
+                Escucha a una <span class="text-info fw-bold">URL</span>, la
+                cual tiene como variable la id, se configura esto poniendo dos
+                puntos y el nombre de la variable. <br />
+                Extrae la variable <span class="text-bootstrap">id</span> de la
+                <span class="text-info fw-bold">URL</span>. <br />
+                Lee el archivo que coincida con el id que extrajimos
+                previamente. <br />
+                Si no lo encuentra devuelve un status de error y el mensaje de
+                <span class="text-warning"
+                  >“Hubo un error, el producto con el id solicitado no
+                  existe”</span
+                >
+                <br />
+                Si efectivamente encuentra el archivo, lo devuelve como
+                respuesta.
+              </p>
+            </div>
+
+            <div class="col-lg-6">
+              <img
+                src="./assets/imagenes/getProductFunction.png"
+                class="img-fluid rounded"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                Ahora nuestra propia API esta lista, esta nos va a devolver los
+                productos que le solicitemos 👇
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="vigesima">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-6 d-flex justify-content-center align-items-center"
+            >
+              <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                Ahora si hacemos una request a, por ejemplo:
+                <a
+                  href="http://localhost:3030/products/50743.json"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="link-light"
+                  >http://localhost:3030/products/50743.json</a
+                >
+                Este nos va a devolver lo siguiente 👉
+              </p>
+            </div>
+
+            <div class="col-lg-6">
+              <img
+                src="./assets/imagenes/ps5json.png"
+                class="img-fluid shadow rounded"
+              />
+
+              <p class="p-1 bg-dark fs-5 text-center">
+                Nos devuelve el producto con el ID solicitado ❗❗
+              </p>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div
+              class="col-lg-6 d-flex justify-content-center align-items-center"
+            >
+              <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                Si probamos a cambiar el id a 50742 👉
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <img
+                src="./assets/imagenes/basketjson.png"
+                class="img-fluid rounded shadow"
+              />
+            </div>
+          </div>
+
+          <div class="row mt-2">
+            <div class="col d-flex justify-content-center align-items-center">
+              <p class="p-4 bg-dark rounded-4 fs-5 text-center">
+                El objeto que nos envía es la
+                <span class="text-warning">Pelota de Basket</span> en vez de la
+                <span class="text-primary">Playstation 5</span>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="vigesimaprimera">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="p-4 bg-dark rounded-4 fs-3 text-center">
+                Si ponemos un <span class="text-info fw-semibold">ID</span> el
+                cual no exista pasara lo siguiente 👉
+              </p>
+              <p class="p-4 bg-dark rounded-4 fs-3 text-center">
+                Nos devuelve un mensaje avisandonos que el producto que
+                solicitamos no existe.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <img
+                src="./assets/imagenes/noproduct.png"
+                class="img-fluid rounded-4 shadow"
+              />
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <p class="p-4 bg-dark rounded-4 fs-3 text-center">
+              Obviamente todo esto lo hace
+              <span class="text-secondary fw-bold">GitHub Pages</span> por
+              nosotros en cuanto al individual, ellos se encargan del routing,
+              es decir, de mostrar la página correcta para cada cosa, y si una
+              no existe mostrar un
+              <span class="text-danger fw-bold">error 404</span>, pero puede ser
+              que si acabamos trabajando en el back-end, terminemos haciendo
+              algo por el estilo.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <!-- Seccion Referencias -->
 
       <section class="ultima">
