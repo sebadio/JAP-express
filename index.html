@@ -93,10 +93,11 @@
               <p class="p-4 bg-dark rounded-4 fs-2">
                 <span class="text-success">Node.js</span> tiene una ventaja
                 única porque millones de desarrolladores de front end que
-                escriben JavaScript para el navegador ahora pueden escribir el
-                código del lado del servidor o backend sin necesidad de aprender
-                un lenguaje completamente diferente. Esto sería el trabajo de un
-                desarrollador <span class="text-warning">full stack</span>.
+                escriben <span class="text-warning"> JavaScript </span> para el
+                navegador ahora pueden escribir el código del lado del servidor
+                o backend sin necesidad de aprender un lenguaje completamente
+                diferente. Esto sería el trabajo de un desarrollador
+                <span class="text-warning">full stack</span>.
               </p>
             </div>
 
@@ -104,13 +105,142 @@
               <p class="p-4 bg-dark rounded-4 fs-2">
                 Otra ventaja de <span class="text-success">Node.js</span> en la
                 cual realmente brilla es en la creación de aplicaciones de red
-                rápidas y escalables, ya que es capaz de manejar una gran
-                cantidad de conexiones simultáneas con un alto rendimiento, lo
-                que equivale a una alta escalabilidad. Con el término
-                escalabilidad se hace referencia a la capacidad de
-                <span class="text-success">Node.js</span> de realizar muchas
-                conexiones de manera simultánea sin que tenga que leer el código
-                línea a línea, ni abrir múltiples procesos.
+                rápidas y <span class="text-info">escalables</span>, ya que es
+                capaz de manejar una gran cantidad de conexiones simultáneas con
+                un alto rendimiento, lo que equivale a una alta
+                <span class="text-info">escalabilidad</span>. Con el término
+                <span class="text-info">escalabilidad</span> se hace referencia
+                a la capacidad de <span class="text-success">Node.js</span> de
+                realizar muchas conexiones de manera simultánea sin que tenga
+                que leer el código línea a línea, ni abrir múltiples procesos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ejemplos -->
+
+      <section class="ejemplos">
+        <div class="container">
+          <div class="row">
+            <h1 class="text-center">Ejemplos de Uso</h1>
+            <hr class="border border-2 border-light" />
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="p-4 bg-dark rounded-4 fs-2">
+                Según <span class="text-warning">Jeff Harrell</span>,
+                actualmente trabajando en
+                <span class="text-primary fw-semibold">G</span
+                ><span class="text-danger fw-semibold">o</span
+                ><span class="text-warning fw-semibold">o</span
+                ><span class="text-primary fw-semibold">g</span
+                ><span class="text-success fw-semibold">l</span
+                ><span class="text-danger fw-semibold">e</span> pero con pasado
+                como ingeniero de software de
+                <span class="text-primary">PayPal</span>, al migrar desde Java a
+                <span class="text-success">Node.js</span> la eficiencia del
+                desarrollo se duplicó
+                <span class="text-secondary"
+                  >(2 personas hicieron el trabajo de 5 personas en menos
+                  tiempo)</span
+                >, el tamaño del código se redujo en un
+                <span class="text-info">33%</span>, la cantidad de archivos se
+                redujo en un <span class="text-info">40%</span> y se duplicaron
+                la cantidad de request por segundo, aumentando en un
+                <span class="text-info">35%</span> la velocidad de respuesta.
+              </p>
+            </div>
+
+            <div
+              class="col-lg-6 d-flex flex-column justify-content-center align-items-center gap-4"
+            >
+              <p class="p-4 bg-dark rounded-4 fs-4">
+                <span class="text-success">Node.js</span> es utilizado por
+                importantes compañías como:
+                <span class="text-danger">Netflix</span>,
+                <span class="text-secondary">Uber</span>,
+                <span class="text-info">Walmart</span>,
+                <span class="text-white">NASA</span>,
+                <span class="text-danger">e</span
+                ><span class="text-primary">B</span
+                ><span class="text-warning">a</span
+                ><span class="text-success">y</span> y
+                <span class="text-primary">PayPal</span>, entre otros.
+              </p>
+              <img
+                loading="lazy"
+                class="img-fluid w-25"
+                src="./assets/imagenes/1024px-Uber_logo_2018.png"
+              />
+              <img
+                loading="lazy"
+                class="img-fluid w-25"
+                src="./assets/imagenes/EBay_logo.png"
+              />
+              <img
+                loading="lazy"
+                class="img-fluid w-25"
+                src="./assets/imagenes/netflix_logo.png"
+              />
+              <img
+                loading="lazy"
+                class="img-fluid w-25"
+                src="./assets/imagenes/nasa-logo-web-rgb.png"
+              />
+              <img
+                loading="lazy"
+                class="img-fluid w-25"
+                src="./assets/imagenes/Paypal_2014_logo.png"
+              />
+              <img
+                loading="lazy"
+                class="img-fluid w-25"
+                src="./assets/imagenes/Walmart_logo_transparent_png.png"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cuarta seccion: Diferencias entre Node y el navegador -->
+
+      <section class="cuarta">
+        <div class="container">
+          <div class="row">
+            <h1 class="text-center">Diferencias entre el navegador y Node</h1>
+            <hr class="border border-2 boder-dark" />
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="p-4 bg-dark rounded-4 fs-2">
+                En el navegador, la mayor parte del tiempo lo que estás haciendo
+                es interactuar con el
+                <span class="text-danger fw-semibold">DOM</span>, u otras APIs
+                de la plataforma web como las cookies. Esas no existen en
+                <span class="text-success fw-semibold">Node.js</span>. Por
+                supuesto no tienes los objetos <code>document</code>,
+                <code>window</code> y todos los demás objetos que proporciona el
+                navegador.
+              </p>
+
+              <p class="p-4 bg-dark rounded-4 fs-2">
+                En su defecto tenemos sus sustitutos que nos sirven para hacer
+                cosas parecidas desde el backend 👉
+              </p>
+            </div>
+
+            <div class="col-lg-6">
+              <p class="p-4 bg-dark rounded-4 fs-2">
+                Por ejemplo el objeto <code>console</code> y sus metodos, son
+                parte del navegador web, no de JavaScript como tal.<br />En la
+                web es parte del objeto <code>window</code>.<br />En Node es
+                parte del objeto <code>global</code>.<br />De todas formas no es
+                necesario escribir <code>window.console.log()</code> para hacer
+                un console.log sino que JavaScript lo interpreta
+                automaticamente.
               </p>
             </div>
           </div>
@@ -254,143 +384,6 @@
               recibir y responder a las órdenes no se quede esperando a la
               respuesta.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Ejemplos -->
-
-      <section class="ejemplos">
-        <div class="container">
-          <div class="row">
-            <h1 class="text-center">Ejemplos de Uso</h1>
-            <hr class="border border-2 border-light" />
-          </div>
-
-          <div class="row">
-            <div class="col-lg-6">
-              <p class="p-4 bg-dark rounded-4 fs-2">
-                Según <span class="text-warning">Jeff Harrell</span>,
-                actualmente trabajando en
-                <span class="text-primary fw-semibold">G</span
-                ><span class="text-danger fw-semibold">o</span
-                ><span class="text-warning fw-semibold">o</span
-                ><span class="text-primary fw-semibold">g</span
-                ><span class="text-success fw-semibold">l</span
-                ><span class="text-danger fw-semibold">e</span> pero con pasado
-                como ingeniero de software de
-                <span class="text-primary">PayPal</span>, al migrar desde Java a
-                <span class="text-success">Node.js</span> la eficiencia del
-                desarrollo se duplicó
-                <span class="text-secondary"
-                  >(2 personas hicieron el trabajo de 5 personas en menos
-                  tiempo)</span
-                >, el tamaño del código se redujo en un
-                <span class="text-info">33%</span>, la cantidad de archivos se
-                redujo en un <span class="text-info">40%</span> y se duplicaron
-                la cantidad de request por segundo, aumentando en un
-                <span class="text-info">35%</span> la velocidad de respuesta.
-              </p>
-            </div>
-
-            <div
-              class="col-lg-6 d-flex flex-column justify-content-center align-items-center gap-4"
-            >
-              <p class="p-4 bg-dark rounded-4 fs-4">
-                <span class="text-success">Node.js</span> es utilizado por
-                importantes compañías como:
-                <span class="text-danger">Netflix</span>,
-                <span class="text-secondary">Uber</span>,
-                <span class="text-info">Walmart</span>,
-                <span class="text-white">NASA</span>,
-                <span class="text-danger">e</span
-                ><span class="text-primary">B</span
-                ><span class="text-warning">a</span
-                ><span class="text-success">y</span> y
-                <span class="text-primary">PayPal</span>, entre otros.
-              </p>
-              <img
-                loading="lazy"
-                class="img-fluid w-25"
-                src="./assets/imagenes/1024px-Uber_logo_2018.png"
-              />
-              <img
-                loading="lazy"
-                class="img-fluid w-25"
-                src="./assets/imagenes/EBay_logo.png"
-              />
-              <img
-                loading="lazy"
-                class="img-fluid w-25"
-                src="./assets/imagenes/netflix_logo.png"
-              />
-              <img
-                loading="lazy"
-                class="img-fluid w-25"
-                src="./assets/imagenes/nasa-logo-web-rgb.png"
-              />
-              <img
-                loading="lazy"
-                class="img-fluid w-25"
-                src="./assets/imagenes/Paypal_2014_logo.png"
-              />
-              <img
-                loading="lazy"
-                class="img-fluid w-25"
-                src="./assets/imagenes/Walmart_logo_transparent_png.png"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Segunda seccion: Instalacion -->
-
-      <section class="segunda">
-        <div class="container">
-          <div class="row w-100">
-            <h1 class="text-center">Instalación</h1>
-            <hr class="border border-2 border-dark" />
-          </div>
-          <div class="row">
-            <div class="col-lg-6">
-              <p class="p-4 bg-dark rounded-4 fs-2">
-                <span class="text-success">Node.js</span> se puede instalar de
-                diferentes maneras. Los paquetes oficiales para las principales
-                plataformas están disponibles
-                <a
-                  href="https://nodejs.dev/en/download/"
-                  target="_blank"
-                  class="link-light"
-                  rel="noopener noreferrer"
-                  >aqui</a
-                >.
-              </p>
-              <p class="p-4 bg-dark rounded-4 fs-2">
-                Para saber si Node fue instalado correctamente lo único que
-                tenemos que hacer es escribir en una terminal o consola (por
-                ejemplo la de git) el comando <code>node --version</code>.<br />
-                Si se instaló correctamente te aparecerá el número de la versión
-                de Node que acabas de instalar.
-              </p>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="row m-2">
-                <img
-                  loading="lazy"
-                  class="img-fluid rounded-2"
-                  src="./assets/imagenes/node_download.png"
-                  alt="node_download"
-                />
-              </div>
-              <div class="row m-2">
-                <span class="bg-dark text-light p-4 rounded-4 w-50 mx-auto">
-                  <p class="m-0">$ node --version</p>
-                  <p class="m-0">v16.15.1</p>
-                </span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -539,40 +532,52 @@
         </div>
       </section>
 
-      <!-- Cuarta seccion: Diferencias entre Node y el navegador -->
+      <!-- Segunda seccion: Instalacion -->
 
-      <section class="cuarta">
+      <section class="segunda">
         <div class="container">
-          <div class="row">
-            <h1 class="text-center">Diferencias entre el navegador y Node</h1>
-            <hr class="border border-2 boder-dark" />
+          <div class="row w-100">
+            <h1 class="text-center">Instalación</h1>
+            <hr class="border border-2 border-dark" />
           </div>
           <div class="row">
             <div class="col-lg-6">
               <p class="p-4 bg-dark rounded-4 fs-2">
-                En el navegador, la mayor parte del tiempo lo que estás haciendo
-                es interactuar con el DOM, u otras APIs de la plataforma web
-                como las cookies. Esas no existen en Node.js. Por supuesto no
-                tienes los objetos <code>document</code>, <code>window</code> y
-                todos los demás objetos que proporciona el navegador.
+                <span class="text-success">Node.js</span> se puede instalar de
+                diferentes maneras. Los paquetes oficiales para las principales
+                plataformas están disponibles
+                <a
+                  href="https://nodejs.dev/en/download/"
+                  target="_blank"
+                  class="link-light"
+                  rel="noopener noreferrer"
+                  >aqui</a
+                >.
               </p>
-
               <p class="p-4 bg-dark rounded-4 fs-2">
-                En su defecto tenemos sus sustitutos que nos sirven para hacer
-                cosas parecidas desde el backend
+                Para saber si Node fue instalado correctamente lo único que
+                tenemos que hacer es escribir en una terminal o consola (por
+                ejemplo la de git) el comando <code>node --version</code>.<br />
+                Si se instaló correctamente te aparecerá el número de la versión
+                de Node que acabas de instalar.
               </p>
             </div>
 
             <div class="col-lg-6">
-              <p class="p-4 bg-dark rounded-4 fs-2">
-                Por ejemplo el objeto <code>console</code> y sus metodos, son
-                parte del navegador web, no de JavaScript como tal.<br />En la
-                web es parte del objeto <code>window</code>.<br />En Node es
-                parte del objeto <code>global</code>.<br />De todas formas no es
-                necesario escribir <code>window.console.log()</code> para hacer
-                un console.log sino que JavaScript lo interpreta
-                automaticamente.
-              </p>
+              <div class="row m-2">
+                <img
+                  loading="lazy"
+                  class="img-fluid rounded-2"
+                  src="./assets/imagenes/node_download.png"
+                  alt="node_download"
+                />
+              </div>
+              <div class="row m-2">
+                <span class="bg-dark text-light p-4 rounded-4 w-50 mx-auto">
+                  <p class="m-0">$ node --version</p>
+                  <p class="m-0">v16.15.1</p>
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -640,7 +645,7 @@
       <section class="sexta">
         <div class="container">
           <div class="row">
-            <h1 class="text-center">Forma tradicional</h1>
+            <h1 class="text-center">Metodo require()</h1>
             <hr class="border border-dark border-2" />
           </div>
 
@@ -708,33 +713,38 @@
         <div class="container">
           <div class="row pt-4">
             <p class="p-4 bg-dark rounded-4 fs-4">
-              En el codigo de index.js creamos una variable la cual va a ser
-              donde se importe la función que escribimos en el otro archivo,
-              esta variable va a ser igual a una función de Node.js la cual nos
+              En el codigo de <span class="text-warning">index.js</span> creamos
+              una variable la cual va a ser donde se importe la función que
+              escribimos en el otro archivo, esta variable va a ser igual a una
+              función de
+              <span class="text-success fw-semibold">Node.js</span> la cual nos
               permite cargar módulos. A esta función le pasamos como parámetro
               donde se encuentra el archivo que queremos cargar, en este caso le
-              pasamos como parámetro “./modulo”, el punto y el slash significa
-              que empezamos a buscar a partir de donde esta el archivo que
-              estamos corriendo con Node, en nuestro caso el archivo estaba en:
+              pasamos como parámetro
+              <span class="text-success fw-semibold">./modulo</span>, (el punto
+              y el slash significa que empezamos a buscar a partir de donde esta
+              el archivo que estamos corriendo con Node), en nuestro caso el
+              archivo estaba en:
               <code class="text-info"
                 >C:\Users\(Nombre de usuario)\Desktop\pruebas</code
               >
               entonces Node empezaría a buscar el archivo en:
               <code class="text-info"
                 >C:\Users\(Nombre de usuario)\Desktop\pruebas\modulo.js</code
-              >, Si nos damos cuenta al cargar un archivo JavaScript no
-              necesitamos especificar cuál es su tipo de archivo, ya que Node
-              por defecto lo carga como un archivo “.js”.
+              >, Si nos damos cuenta al cargar un archivo
+              <span class="text-warning">JavaScript</span> no necesitamos
+              especificar cuál es su tipo de archivo, ya que Node por defecto lo
+              carga como un archivo <span class="text-warning">.js</span>.
             </p>
           </div>
 
           <div class="row">
             <div class="col-lg-6">
               <p class="p-4 bg-dark rounded-4 fs-4">
-                Después tenemos un console.log de lo que nos devuelve esta
-                función. Para correr un archivo js con Node abrimos una terminal
-                como por ejemplo la de git y escribimos “node (nombre de
-                archivo)”.
+                Después tenemos un <code>console.log</code> de lo que nos
+                devuelve esta función. Para correr un archivo js con Node
+                abrimos una terminal como por ejemplo la de git y escribimos
+                <code>node {nombre del archivo}</code>.
               </p>
             </div>
 
@@ -742,7 +752,7 @@
               class="col-lg-6 d-flex flex-column justify-content-center align-items-center gap-2"
             >
               <span class="bg-dark rounded p-2"
-                >Al correr nuestro archivo esto es lo que sucede:</span
+                >Al correr nuestro archivo esto es lo que sucede 👇</span
               >
               <img
                 loading="lazy"
@@ -750,17 +760,19 @@
                 class="img-fluid rounded"
               />
               <span class="bg-dark rounded p-2"
-                >Nos dice que nuestra plataforma actual es win32 (ya que
-                corrimos nuestro código en Windows).</span
+                >Nos dice que nuestra plataforma actual es
+                <span class="text-primary fw-bold">win32</span> (ya que corrimos
+                nuestro código en Windows).</span
               >
             </div>
           </div>
 
           <div class="row mt-4">
             <p class="p-4 bg-dark rounded-4 fs-3">
-              Como podemos ver corrimos el archivo index.js, este cargo el
-              módulo solicitado y pudimos usar una función de otro archivo en
-              nuestro código.
+              Como podemos ver corrimos el archivo
+              <span class="text-warning">index.js</span>, este cargo el módulo
+              solicitado y pudimos usar una función de otro archivo en nuestro
+              código.
             </p>
           </div>
         </div>
@@ -770,6 +782,11 @@
 
       <section class="octava">
         <div class="container">
+          <div class="row">
+            <h1 class="text-center">Metodo Import</h1>
+            <hr class="border border-2 border-light" />
+          </div>
+
           <div class="row pt-2">
             <p class="p-4 bg-dark rounded-4 fs-4 text-center">
               Como ya mencionamos hay otra forma de importar otro código al
