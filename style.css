@@ -41,6 +41,16 @@ code {
   border-radius: 15px;
 }
 
+.text-bootstrap {
+  color: #9b12ff;
+  font-weight: 600;
+}
+
+.express {
+  font-family: helvetica;
+  font-weight: 100 !important;
+}
+
 .primera {
   background: rgb(21, 18, 69);
 }
@@ -87,6 +97,42 @@ code {
 
 .octava {
   background: rgb(21, 14, 89);
+}
+
+.novena {
+  background: mediumslateblue;
+}
+
+.decima {
+  background: darkslategrey;
+}
+
+.undecima {
+  background: chocolate;
+}
+
+.duodecima {
+  background: darkolivegreen;
+}
+
+.decimotercera {
+  background: royalblue;
+}
+
+.decimocuarta {
+  background: lightseagreen;
+}
+
+.decimoquinta {
+  background: #2e3e4e;
+}
+
+.decimosexta {
+  background: #9de3af;
+}
+
+.decimoseptima {
+  background: sienna;
 }
 
 .ultima {

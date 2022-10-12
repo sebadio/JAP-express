@@ -782,6 +782,586 @@
               </p>
             </div>
           </div>
+
+          <div class="row mt-4">
+            <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+              Ahora tenemos todo pronto para actualizar nuestra forma de
+              exportar e importar archivos en Node <br />
+              Veamos como hacerlo 👇
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="novena">
+        <div class="container">
+          <div class="row pt-4">
+            <div class="col-lg-6">
+              <img
+                src="./assets/imagenes/exportDefault.png"
+                class="img-fluid rounded"
+              />
+            </div>
+
+            <div class="col-lg-6">
+              <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                Ahora simplemente tenemos que cambiar el
+                <code class="text-success">module.exports = plataforma</code> a
+                un mas simple:
+                <code>export default plataforma</code>
+              </p>
+            </div>
+          </div>
+
+          <div class="row pt-4">
+            <div class="col-lg-6">
+              <img
+                src="./assets/imagenes/importDefault.png"
+                class="img-fluid rounded"
+              />
+            </div>
+
+            <div class="col-lg-6">
+              <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                Y en el <span class="text-success">index.js</span> simplemente
+                cambiamos el <br />
+                <code>const plataforma = require("./modulo")</code> a un
+                <code class="text-info"
+                  >import plataforma from "./modulo.js"</code
+                >
+                <br />
+                En este caso, si es necesario escpecificar el tipo de archivo,
+                ya que con el <code class="text-info">import</code> es posible
+                importar otro tipo de archivos
+              </p>
+            </div>
+          </div>
+
+          <div class="row pt-4">
+            <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+              Les explicamos ambos métodos porque probablemente a partir de
+              ahora se utilice el ultimo metodo, ya que viene incluido con
+              JavaScript y tiene otras ventajas, pero puede ser que si entramos
+              a una empresa que tiene proyectos antiguos, estos aun están
+              utilizando la primer forma, o simplemente la utilizan por alguna
+              ventaja y/o por compatibilidad.<br />De todas formas, ambas son
+              formas válidas de modularizar nuestro código.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- NPM y modulos -->
+
+      <section class="decima">
+        <div class="container">
+          <div class="row">
+            <h1 class="text-center">npm - Node Package Manager</h1>
+            <hr class="border border-2 border-dark" />
+          </div>
+
+          <div class="row">
+            <div
+              class="col-lg-6 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="./assets/imagenes/npm_logo.png"
+                class="img-fluid w-50"
+              />
+            </div>
+
+            <div class="col-lg-6">
+              <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                <span class="text-danger">npm</span> es el acrónimo de Node
+                Package Manager, que traducido al español significa “Gestor de
+                Paquetes de Node” y , como su nombre indica nos sirve para
+                gestionar paquetes de Node.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                <span class="text-danger">npm</span> nos permite instalar código
+                creado por otra gente, directamente en nuestro proyecto, y
+                utilizarlo más cómodamente. Por ejemplo, en nuestro proyecto
+                nosotros usamos <span class="text-bootstrap">Bootstrap</span>,
+                el cual nos permite darle estilo más fácilmente a nuestra
+                pagina, perfectamente podriamos instalar el paquete de
+                <span class="text-bootstrap">Bootstrap</span> que se encuentra
+                en <span class="text-danger">npm</span> 👉
+              </p>
+            </div>
+
+            <div class="col-lg-6">
+              <img
+                src="./assets/imagenes/npmBootstrapPage.png"
+                class="img-fluid rounded shadow"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-8">
+              <img
+                src="./assets/imagenes/bootstrapConsole.png"
+                class="img-fluid"
+              />
+            </div>
+
+            <div class="col-lg-4">
+              <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                Como podemos ver para instalar este paquete tenemos que usar el
+                comando <code>npm i bootstrap</code> en nuestra terminal o
+                consola.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="undecima">
+        <div class="container">
+          <div class="row pt-4">
+            <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+              Cuando lo corramos se instalará el paquete de
+              <span class="text-bootstrap">Bootstrap</span> y se creará una
+              carpeta llamada <span class="text-success">node_modules</span> en
+              nuestro proyecto.
+              <br />
+              Primero que nada vamos a ver que cambio en nuestra configuración:
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <img
+                src="./assets/imagenes/packageJsonBootstrap.png"
+                class="img-fluid rounded"
+              />
+            </div>
+
+            <div class="col-lg-6">
+              <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                Como podemos ver se creo una nueva propiedad en nuestro
+                <span class="text-success">package.json</span>, esta es un
+                objeto llamado dependencies, en el cual a partir de ahora
+                aparecerán los paquetes de los cuales nuestro código depende. En
+                nuestro caso solo instalamos el
+                <span class="text-bootstrap">Bootstrap</span> por lo que
+                aparecerá el nombre del paquete y su versión, la cual en este
+                caso es la <span class="text-info">5.2.2</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-lg-6">
+              <img
+                src="./assets/imagenes/nodeModules.png"
+                class="img-fluid rounded"
+              />
+            </div>
+
+            <div class="col-lg-6">
+              <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                Ahora en cuanto a la carpeta
+                <span class="text-success">node_modules</span>, ahí es donde se
+                guardaran los paquetes que instalemos y será de donde los
+                importemos para utilizarlos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="duodecima">
+        <div class="container">
+          <div class="row pt-4">
+            <div class="col-lg-6">
+              <img
+                src="./assets/imagenes/importButton.png"
+                class="img-fluid rounded"
+              />
+            </div>
+
+            <div class="col-lg-6">
+              <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                Después en nuestro proyecto podemos importar lo que
+                <span class="text-bootstrap">Bootstrap</span>
+                nos exporta para que podamos usar. Por ejemplo, acá importamos
+                el Button y creamos uno desde
+                <span class="text-warning">JavaScript</span>.
+              </p>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-lg-6">
+              <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                Si nuestro proyecto, ya no necesita uno de nuestros paquetes,
+                podemos desinstalarlo fácilmente con el comando
+                <code>npm uninstall {{nombre del paquete}}</code>
+              </p>
+            </div>
+
+            <div
+              class="col-lg-6 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="./assets/imagenes/npmUninstall.png"
+                class="img-fluid rounded"
+              />
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+              <span class="text-danger">npm</span> tiene muchos paquetes, tanto
+              para front-end como para back-end, para nuestra presentación nos
+              va a servir para demostrar uno de los paquetes más populares:
+              <span class="text-light">Express.js</span>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Express.js -->
+
+      <section class="decimotercera">
+        <div class="container">
+          <div class="row">
+            <h1 class="text-center">Express.js</h1>
+            <hr class="border border-2 border-dark" />
+          </div>
+
+          <div class="row">
+            <div
+              class="col-lg-6 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="./assets/imagenes/expressLogo.png"
+                class="img-fluid w-50"
+              />
+            </div>
+
+            <div class="col-lg-6">
+              <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                <span class="text-light">Express.js</span> es un framework de
+                aplicación web <span class="text-success">Node.js</span> mínimo
+                y flexible que proporciona un conjunto robusto de
+                características para aplicaciones web y móviles <br />
+              </p>
+
+              <ul class="list-group">
+                <li class="list-group-item bg-dark text-light">
+                  Completamente construido sobre
+                  <span class="text-success">node.js</span>
+                </li>
+                <li class="list-group-item bg-dark text-light">
+                  Enrutamiento complejo
+                </li>
+                <li class="list-group-item bg-dark text-light">
+                  Renderizado del lado del servidor
+                </li>
+                <li class="list-group-item bg-dark text-light">
+                  Manejo sencillo de la solicitud y la respuesta
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-lg-6">
+              <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                Express se instala facilmente via
+                <span class="text-danger">npm</span> con el siguiente comando:
+                <br />
+                <code>npm i express</code>
+              </p>
+            </div>
+
+            <div
+              class="col-lg-6 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="./assets/imagenes/installExpress.png"
+                class="img-fluid rounded shadow"
+              />
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+              Ahora en nuestras dependencias aparecerá express y su versión, y
+              en nuestra carpeta
+              <span class="text-success">node_modules</span> aparecerá
+              <span class="text-light">express</span> y sus dependencias.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- HTTP -->
+
+      <section class="decimocuarta">
+        <div class="container">
+          <div class="row">
+            <h1 class="text-center">Servidor Web con Express</h1>
+            <hr class="border border-2 border-dark" />
+          </div>
+
+          <div class="row">
+            <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+              Obviamente tanto
+              <span class="text-success fw-semibold">Node</span> como
+              <span class="text-light fw-semibold">Express</span> son mas que
+              nada utilizados en el backend. Y en cuanto a backend nada es mas
+              importante que el servidor web, el cual se puede hacer con
+              <span class="text-success fw-semibold">Node</span>, pero es mucho
+              mas facil y eficiente hacerlo con
+              <span class="text-light fw-semibold">Express</span> (por eso es
+              tan popular).
+            </p>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-lg-6">
+              <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                Primero que nada hay que recordar que son los metodos HTTP.
+                <br />
+                Los métodos HTTP son un conjunto de instrucciones que, tanto
+                nuestro cliente (navegador web) como el servidor al que estamos
+                accediendo, siguen para poder comunicarse. Muchas veces en
+                nuestra barra de navegación podemos ver algo asi:
+                <span class="bg-secondary px-2 py-1 rounded text-dark"
+                  >https://</span
+                >
+                <br />
+                HTTP es un acrónimo para
+                <span class="text-info fw-semibold"
+                  >Hypertext Transfer Protocol</span
+                >
+                que en español se traduciría a
+                <span class="text-info fw-semibold"
+                  >Protocolo de transferencia de hipertexto</span
+                >, la <span class="text-info fw-semibold">S</span> al final
+                significa que la conexión es segura.
+              </p>
+            </div>
+
+            <div
+              class="col-lg-6 d-flex justify-content-center align-items-center flex-column"
+            >
+              <div class="row">
+                <p class="p-4 bg-dark rounded-4 fs-5 text-center">
+                  Estos son los principales metodos HTTP:
+                </p>
+              </div>
+
+              <ul class="list-group list-group-horizontal">
+                <li class="list-group-item bg-dark text-light">GET</li>
+                <li class="list-group-item bg-dark text-light">POST</li>
+                <li class="list-group-item bg-dark text-light">PUT</li>
+                <li class="list-group-item bg-dark text-light">DELETE</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Routing -->
+
+      <section class="decimoquinta">
+        <div class="container">
+          <div class="row">
+            <h1 class="text-center">Routing</h1>
+            <hr class="border border-2 border-light" />
+          </div>
+
+          <div class="row">
+            <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+              El enrutamiento se refiere a cómo los puntos finales de una
+              aplicación (URI) responden a las solicitudes de los clientes. Por
+              ejemplo, cuando nosotros solicitamos los datos del individual, lo
+              hacemos haciendo un GET request con la función de getJSONData,
+              esta request la hacemos a una URL.
+            </p>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-lg-6">
+              <p class="p-4 bg-dark rounded-4 fs-2 text-center">
+                <a
+                  class="link-light"
+                  href="https://japceibal.github.io/emercado-api/products/50744.json"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://japceibal.github.io/emercado-api/products/50744.json</a
+                >
+                👈esta URL nos devuelve el producto “Bicicleta” y sus datos. El
+                server sabe que ese es el producto que queremos porque le
+                pasamos el identificador
+                <span class="text-info fw-semibold">50744</span>, el cual
+                corresponde a ese producto.
+              </p>
+            </div>
+
+            <div
+              class="col-lg-6 d-flex justify-content-center align-items-center flex-column"
+            >
+              <div class="row">
+                <pre class="bg-dark p-2 rounded w-50">
+{ 
+  "id": 50744, <br />
+  "name": "Bicicleta", <br />
+  "description": "¡La mejor BMX pequeña del mercado! Frenos
+  traseros y cuadro duradero de acero Hi-Ten.", <br />
+  "cost": 10999, <br />
+  "currency": "UYU", <br />
+  "soldCount": 8, <br />
+  "category": "Juguetes", <br />
+  "images": [ "img/prod50744_1.jpg", "img/prod50744_2.jpg",
+  "img/prod50744_3.jpg", "img/prod50744_4.jpg" ], <br />
+  "relatedProducts": [ { "id":50741, "name":"Oso de peluche",
+  "image": "img/prod50741_1.jpg" }, { "id":50743,
+  "name":"PlayStation 5", "image": "img/prod50743_1.jpg" } ]
+}</pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+              Normalmente de cosas como darnos el producto que queremos se
+              encarga el servidor, y se le llama
+              <span class="text-info fw-semibold">Routing</span> y con
+              express.js lo podemos hacer tal que asi 👇
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="decimosexta">
+        <div class="container">
+          <div class="row mt-4">
+            <div class="col-lg-6">
+              <img
+                src="./assets/imagenes/importExpress.png"
+                class="img-fluid rounded"
+              />
+            </div>
+
+            <div class="col-lg-6">
+              <p class="p-4 bg-dark rounded-4 fs-2 text-center">
+                Importamos la función <code class="text-info">express</code> de
+                el modulo express decicimos que puerto queremos usar para
+                nuestra aplicación, en nuestro caso es el
+                <span class="text-success">3030</span> y creamos la app con la
+                función que importamos.
+              </p>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-lg-6">
+              <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                Después tenemos que hacer que nuestra app escuche a las request
+                que le llegan a ese puerto, por defecto la URL es
+                <code>http://localhost:3030</code>.
+              </p>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col">
+                  <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                    Nuestra app aun no es funcional, necesitamos que nos
+                    devuelva algo al escuchar en alguna de sus URL como lo
+                    hacemos en el individual. Entonces vamos a crear una página
+                    👇
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div
+                  class="col d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="assets/imagenes/pages.png"
+                    class="img-fluid p-0 rounded-4"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="decimoseptima">
+        <div class="container">
+          <div class="row mt-4">
+            <div class="col-lg-6">
+              <img
+                src="./assets/imagenes/indexhtml.png"
+                class="img-fluid rounded"
+              />
+            </div>
+
+            <div class="col-lg-6">
+              <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                El <span class="text-warning">index.html</span> no tiene nada
+                muy importante, simplemente tiene lo necesario para que la
+                página cargue, le agregamos bootstrap para que no se vea
+                demasiado fea y algún que otro título y párrafo.
+              </p>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-lg-6">
+              <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                Ahora queremos hacer que esta 👆 pagina que hicimos recién sea
+                la que los usuarios vean cuando entren a nuestra página. <br />
+                Para ello tenemos que configurar en nuestro index.js que cuando
+                un usuario solicite con una
+                <span class="text-info">GET</span> request a la ruta base
+                <span class="text-success fw-bold">./</span> , le devolvamos
+                este archivo como respuesta. <br />
+                Para ello vamos a hacer lo siguiente 👉
+              </p>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="row">
+                <div
+                  class="col d-flex justify-content-center align-items-center mb-4"
+                >
+                  <img
+                    src="./assets/imagenes/importFS.png"
+                    class="img-fluid rounded"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <p class="p-4 bg-dark rounded-4 fs-4 text-center">
+                    Importamos algo llamado
+                    <span class="text-info fw-bold">fs</span>, lo cual es un
+                    acrónimo para
+                    <span class="text-info fw-semibold">file system</span> o
+                    <span class="text-info fw-semibold"
+                      >sistema de archivos</span
+                    >
+                    en español, el cual nos permite interactuar con los archivos
+                    que tenemos en nuestra computadora.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -870,6 +1450,22 @@
                         class="link-light"
                         rel="noopener noreferrer"
                         >Documentación de Express.js</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  Articulos
+                  <ul>
+                    <li>
+                      <a
+                        class="link-light"
+                        href="https://programmerclick.com/article/60041739800/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >¿Por qué PayPal migró de Java a Node.js, duplicó el
+                        rendimiento y redujo el código del archivo en un 44%?</a
                       >
                     </li>
                   </ul>
