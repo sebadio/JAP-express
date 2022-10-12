@@ -9,6 +9,11 @@ app.get("/", (req, res) => {
   fs.readFile(`./pages/index.html`, { encoding: "utf-8" }, (err, data) => {
     if (err) {
       console.error(err);
+      res
+        .status(500)
+        .send(
+          "Sucedio un error al cargar la pagina, por favor intentelo mas tarde"
+        );
       return;
     }
 
